@@ -584,6 +584,7 @@ export default class ApiCalendar extends Component {
 
     return (
       <div>
+        Welcome to EzCal!
         {this.state.uid ? <button onClick={() => this.Logout()}>Sign out</button> : null}
 
         {this.state.uid ? <div>Welcome, {this.state.userName}!</div> : <button onClick={() => { this.Login() }}>Sync with Google</button>}
